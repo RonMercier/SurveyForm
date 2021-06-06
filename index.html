@@ -1,0 +1,71 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<main>
+	<!--Header-->
+	<h1 id="title">Code Blue Academy</h1>
+		<form id="survey-form">
+			<div id="head">
+				<h3>Become a developer in as little as 24 weeks with our career focused curriculum.</h3>
+				<p id="description">Fill out the form below to request information.</p>
+			</div>
+			<div id="name-field">
+				<label for="name" id="name-label">* Name:</label> <input id="name" type="text" name="fullname" placeholder="Name" required="" type="text"> <br>
+			</div>
+			<div id="email-field">
+				<label for="email" id="email-label">* Email:</label> <input id="email" type="email" name="email" placeholder="Email" required="" type="text"> <br>
+			</div>
+			<div id="number-field">
+				<label for="number" id="number-label">* Age:</label> <input id="number" type="number" name="age" placeholder="Age" required="" type="number" min="18" max="99"> <br>
+			</div>
+			<div id="dropdown-list">
+				<label for="dropdown" id="dropdown-label">Program of interest:</label>	
+					<select id="dropdown" name="Gender">
+						<option selected>Select an answer</option>
+						<option value="Front End Developer">Front End Developer</option>
+						<option value="Full Stack Developer">Full Stack Developer</option>
+						<option value="iOS Developer">iOS Developer</option>
+						<option value="Android Kotlin Developer">Android Kotlin Developer</option>
+						<option value="Cloud DevOps Engineer">Cloud DevOps Engineer</option>
+					</select> <br>
+			</div>
+			<div id="radio-buttons">
+				<label for="radio" id="radio-label">Choose a start date:</label>
+					<div id="radio">
+						<label for="Yes"><input type="radio" name="interest" value="Yes"> May 2021</label> <br>
+						<label for="No"><input type="radio" name="interest" value="No"> November 2021</label> <br>
+						<label for="Maybe"><input type="radio" name="interest" value="Maybe"> May 2021</label> <br>
+					</div>
+			</div>
+			<div id="checkboxes">
+				<label for="checklist" id="checklist-label">What technology do you have experience in?<br>(Check all that apply):</label>
+					<div id="checklist">
+						<label for="HTML" class="checkbox"><input type="checkbox" name="character" value="HTML">HTML</label> <br>
+						<label for="CSS" class="checkbox"><input type="checkbox" name="character" value="CSS">CSS</label> <br>
+						<label for="JavaScript" class="checkbox"><input type="checkbox" name="character" value="JavaScript">JavaScript</label> <br>
+						<label for="React" class="checkbox"><input type="checkbox" name="character" value="React">React</label> <br>
+						<label for="Ruby" class="checkbox"><input type="checkbox" name="character" value="Ruby">Ruby</label> <br>
+						<label for="Java" class="checkbox"><input type="checkbox" name="character" value="Java">Java</label> <br>
+						<label for="C++" class="checkbox"><input type="checkbox" name="character" value="C++">C++</label> <br>
+						<label for="Python" class="checkbox"><input type="checkbox" name="character" value="Python">Python</label> <br>
+						<label for="SQL" class="checkbox"><input type="checkbox" name="character" value="SQL">SQL</label> <br>
+					</div>
+			</div>
+			<!--Footer-->
+			<div id="textarea">
+				<label for="textarea" id="textarea-label">Any comments or suggestions?</label> <textarea rows="5" cols="10" placeholder="Enter your suggestions here..."></textarea>
+			</div>
+			<div id="submit-form">
+				<button id="submit" type="Submit" class="submit">Submit</button>
+			</div>	
+		</form>
+</main>

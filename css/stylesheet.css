@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body  {
+	background-image: url(https://www.teahub.io/photos/full/88-885387_android-developer-wallpaper-hd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: left;
+}
+
+p {
+	margin-top: 25px;
+}
+
+input[type="text"], [type="email"], [type="number"], [type="submit"] {
+	border-radius: 8px;
+	cursor: text;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+select {
+	border-radius: 8px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+button {
+	border-radius: 2px;
+	background-color: blue;
+	color: white;
+	font-size: 18px;
+	padding-right: 20px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: navy;
+}
+
+#title {
+	text-align: center;
+	font-family: 'Play', sans-serif;
+	color: blue;
+  	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+	font-weight: bold;
+	font-size: 60px;
+	margin-right: 750px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	letter-spacing: 5px;
+} 
+
+#head {
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 40px;
+	line-height: 25px;
+}
+
+#survey-form {
+	background-color: rgb(1%, 31%, 47%, 0.7);
+	border-radius: 4px;
+	margin: auto;
+	padding: 1.5em;
+	line-height: 2.0;
+	font-size: 21px;
+	color: white;
+	margin-bottom: 50px;
+	width: 900px;
+	border: solid;
+	border-color: white;
+}
+
+.submit {
+	cursor: pointer;
+	border-color: white;
+}	
+
+#submit-form {
+	padding-top: 10px;
+	text-align: center;
+	margin: auto;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #checklist-label, #textarea-label {
+	text-align: right;
+	font-weight: bold;
+}
+
+#name-field, #email-field, #number-field, #radio-buttons, #dropdown-list, #checkboxes, #textarea {
+	display: grid;
+	width: 90%;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: 5px;
+
+}
+
+/*  media queries  */
+
+
+@media only screen and (max-width: 768px) {
+
+#name-field, #email-field, #number-field, #radio-buttons, #dropdown-list, #checkboxes, #textarea {
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: left;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #checklist-label, #textarea-label {
+	max-width: 100%;
+	text-align: left;
+
+}
+
+input[type=text], [type=email], [type=number], [type=submit] {
+	max-width: 100%;
+	padding: 4px;
+}
+
+#survey-form {
+	max-width: 100%;
+	margin: auto;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+#title {
+	margin-right: 20px;
+	font-size: 50px;
+}
+
+body {
+	background-position: right;
+}
+
+#submit-form {
+	margin: auto;
+}
+
+}
+
+
+
+
+
